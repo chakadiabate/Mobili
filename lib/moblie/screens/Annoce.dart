@@ -113,7 +113,7 @@ class _AnnonceDashboardState extends State<AnnonceDashboard> {
               mainAxisSpacing: 10,
               children: [
                 _buildOverviewCard('Total Annonces', userCarListings.length.toString()),
-                _buildOverviewCard('Nombre de clic', '150'),
+                _buildOverviewCard('Nombre de clic', '11'),
               ],
             ),
           ],

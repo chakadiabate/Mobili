@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber, // Couleur principale
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme), // Google Fonts
       ),
-      home: Launch(), // Vérification de l'état d'authentification pour la navigation
+      home: LoginPage(), // Vérification de l'état d'authentification pour la navigation
     );
   }
 }

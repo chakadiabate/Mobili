@@ -63,7 +63,7 @@ class DashbordReservation extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: DataTable(
                       columns: [
-                        DataColumn(label: Text('Numéro')),
+                        DataColumn(label: Text('ID')),
                         DataColumn(label: Text('Nom du Voiture')),
                         DataColumn(label: Text('ID Propriétaire')),
                         DataColumn(label: Text('Téléphone')),
@@ -80,7 +80,8 @@ class DashbordReservation extends StatelessWidget {
                           cells: [
                             DataCell(Text((index + 1).toString())),
                             DataCell(Text(reservation['carName'] ?? 'N/A')),
-                            DataCell(Text(reservation['UserId'] ?? 'N/A')), // ID de l'utilisateur
+                            DataCell(Text((index + 2).toString())),
+                            //DataCell(Text(reservation['UserId'] ?? 'N/A')), // ID de l'utilisateur
                             DataCell(Text(reservation['phone'] ?? 'N/A')),
                             DataCell(Text(_formatTimestamp(reservation['startDate']))),
                             DataCell(Text(_formatTimestamp(reservation['endDate']))),
@@ -126,7 +127,7 @@ class DashbordReservation extends StatelessWidget {
       await FirebaseFirestore.instance.collection('Notifications').add({
         'UserId': UserId,
         'carName': carName,
-        'message': 'Votre réservation de ${carName} a été confirmée.',
+        'message': 'Votre réservation du ${carName} a été confirmée.',
         'timestamp': FieldValue.serverTimestamp(),
       });
 

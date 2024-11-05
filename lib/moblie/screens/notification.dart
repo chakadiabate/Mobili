@@ -111,6 +111,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                             notification['message'] ?? '',
                             style: TextStyle(
                               color: Colors.grey,
+                              fontSize: 10,
                             ),
                           ),
 

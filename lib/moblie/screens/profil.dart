@@ -110,7 +110,7 @@ class _ProfilState extends State<Profil> {
           _buildInfoTile(Icons.edit, 'Nom', _userData!['nom']),
           _buildInfoTile(Icons.email, 'Email', _userData!['email']),
           _buildInfoTile(Icons.phone, 'Téléphone', _userData!['phone_number']),
-          _buildInfoTile(Icons.image, 'ID Image', 'image de la pièce'),
+          //_buildInfoTile(Icons.image, 'ID Image', 'image de la pièce'),
           SizedBox(height: 24),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -120,7 +120,7 @@ class _ProfilState extends State<Profil> {
                 icon: Icon(Icons.edit),
                 label: Text("Modifier le profil"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -139,7 +139,7 @@ class _ProfilState extends State<Profil> {
                 icon: Icon(Icons.logout),
                 label: Text("Se déconnecter"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),

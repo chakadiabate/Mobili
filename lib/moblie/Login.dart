@@ -258,7 +258,12 @@ class _RegisterState extends State<Register> {
               ElevatedButton(
                 onPressed: _signup,
                 child: Text('S\'inscrire'),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                  textStyle: TextStyle(fontSize: 16),
+                  backgroundColor: Colors.blue,
+                  minimumSize: Size(double.infinity, 50),
+                ),
               ),
             ],
           ),

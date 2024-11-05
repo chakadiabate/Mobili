@@ -179,6 +179,7 @@ class _InscriptionState extends State<Inscription> {
                         MaterialPageRoute(builder: (context) => Accueil()),
                       );
                     },
+
                     child: Text(
                       "S'inscrire",
                       style: TextStyle(
